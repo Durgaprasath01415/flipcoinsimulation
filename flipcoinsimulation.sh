@@ -27,4 +27,16 @@ then
 elif [ $count -eq $count1 ]
 then
         echo "Its a tie"
+ 	while [ $counter -ge 0 -a $count2 -lt $count3+2 -a $count3 -lt $>
+        do
+        	coinflip=$(( RANDOM%2 ))
+        	if [ $coinflip -eq 0]
+        then
+                echo "Heads"
+                count2=$(( $count2+1 ))
+        else
+                echo "Tails"
+                count3=$(( $count3+1 ))
+        fi
+        done
 fi
